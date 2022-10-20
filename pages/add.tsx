@@ -6,11 +6,21 @@ type Props = {
 const Add: NextPage<Props> = ({ tasks }) => {
   return (
     <div>
-      <form>
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
-        <input type="text" />
+      <h1>create user</h1>
+      <form
+        style={{
+          display: "flex",
+          flexDirection: "column",
+        }}
+      >
+        <label>
+          title
+          <input type="text" />
+        </label>
+        <label>
+          name
+          <input type="text" />
+        </label>
       </form>
     </div>
   )
